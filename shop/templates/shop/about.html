@@ -1,0 +1,131 @@
+{% extends 'shop/basic.html' %}
+{% block title%} About Us{% endblock %}
+{% block body %}
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+<style>
+.btn i {
+  margin-right: 5px;
+}
+
+.clean-block {
+  padding-bottom: 50px;
+}
+
+.clean-block.dark {
+  background-color: #f6f6f6;
+}
+
+.clean-block.green {
+  background-color: #007bff;
+  color: white;
+}
+
+.clean-block.green input {
+  border: none;
+}
+
+.clean-block .block-heading {
+  padding-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.clean-block .block-heading p {
+  text-align: center;
+  max-width: 420px;
+  margin: auto;
+  opacity: 0.7;
+}
+
+.clean-block.dark .block-heading p {
+  opacity: 0.8;
+}
+
+.clean-block .block-heading h1{
+  margin-bottom: 1.2rem;
+}
+
+.clean-block .content {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+  background-color: white;
+}
+
+.clean-block .block-content {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+  background-color: white;
+  padding: 40px;
+}
+
+/* About us */
+.clean-card {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+  border-radius: 3px;
+  margin-bottom: 40px;
+  border: 1px solid #eaeaea;
+}
+
+.clean-card .image {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.clean-card .info {
+  padding: 30px;
+}
+
+.clean-card h4 {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.clean-card p {
+  opacity: 0.8;
+  font-size: 0.85em;
+  margin-bottom: 0.9em;
+}
+
+.clean-card .icons a {
+  font-size: 16px;
+  color: #3b99e0;
+  opacity: .75;
+  height: 2em;
+  line-height: 2;
+  text-align: center;
+  padding: 0.6em 0.4em;
+}
+
+.clean-card .icons a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+</style>
+<body>
+{% load static %}
+    <main class="page">
+        <section class="clean-block about-us">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">About Us</h2>
+                    <p>Hi! I am Pratyush Pratap Singh.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card clean-card text-center"><img class="card-img-top w-100 d-block" src="{% static "shop/pps.jpg" %}" alt="My image">
+                            <div class="card-body info">
+                                <h4 class="card-title">Pratyush Pratap Singh</h4>
+                                <p class="card-text">Project Leader</p>
+                                <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+{% endblock %}
